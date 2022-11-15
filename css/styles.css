@@ -1,0 +1,134 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+       background-color: black;
+}
+
+nav {
+    margin-top: 3rem;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.lista-navegacion li {
+    display: inline;
+    font-size: 1.8rem;
+    margin: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Saira', sans-serif;
+}
+
+h1 {
+    color: grey;
+    font-family: 'Saira', sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-size: 2rem;
+}
+
+.foto-backstage {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-portada {
+    width: 1800px;
+    height: 1200px;
+}
+
+.foto-galeria {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-opiniones {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-recitales {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-books {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-eventos {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-producto {
+    width: 600px;
+    height: 400px;
+}
+
+.video-youtube {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-deportes {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-quiensoy {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-comotrabajo {
+    width: 600px;
+    height: 400px;
+}
+
+.foto-experiencia {
+    width: 600px;
+    height: 400px;
+}
+
+p {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-size: 1.8rem;
+}
+
+.lista-navegacion-abajo li {
+    display: inline;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin: 100px;
+}
+
+.p-ultimo-tamanio {
+    font-family: 'Saira', sans-serif;
+    font-size: 0.8rem;
+    }
+
+.imagen-ultima {
+    width: 80px;
+    height: 80px;
+}
