@@ -1,0 +1,12 @@
+/*variable colores del encabezado*/
+$bg-header: #305050;
+$fuente-h1: 3rem;
+$fuente-h2: 2rem;
+
+/*mixin*/
+@mixin display-justify-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    

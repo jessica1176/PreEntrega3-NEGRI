@@ -1,0 +1,155 @@
+@import "variables";
+@import "globales";
+@import "layout";
+@import "inicio";
+@import "galeria";
+@import "info";
+@import "contacto";
+@import "ubicacion";
+
+
+/*Para adaptar las imagenes de mi proyecto a la pantalla*/
+img {
+    max-width: 100%;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.encabezado {
+    background-color: $bg-header;
+    grid-area: header;
+    @include display-justify-align;
+    flex-direction: column;
+    
+    h1 {
+        @extend .color-fuente;
+        font-size: $fuente-h1;
+        margin-top: 10%;
+    }
+    h2 {
+        color: white;
+        font-family: 'Saira', sans-serif;
+        font-size: $fuente-h2;
+        margin-bottom: 10%;
+    }
+}
+
+.menu {
+    background-color: whitesmoke;
+    grid-area: nav;
+}
+
+.menu ul { 
+    list-style: none;
+    @include display-justify-align;
+    height: 100%;
+}
+
+.menu ul li a { 
+    text-decoration: none;
+    @extend .color-fuente;
+    font-size: 1.5rem;
+}
+
+.cotenido {
+    background-color: black;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+.fotoportada {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fotoportada img {
+    width: 100%;
+    border: solid 2px black;
+}
+
+.opcionesintro img {
+    grid-area: main;
+    @include display-justify-align;
+    text-align: center;
+    width: 800px;
+    height: 300px;
+}
+
+.opcionesintro h2 {
+    @extend .color-fuente;
+    font-size: 2rem;
+}
+
+.pie {
+    background-color: darkslategray;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.pie img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.grid-container {
+    width: 80%;
+    margin: 0 auto;
+    @extend .color-fuente;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr; /*Puedo agregar la funcion repeat; en lugar de poner 1fr 1fr 1fr; pongo repeat (3) 1fr*/ 
+    grid-template-rows: 90px 25px auto 90px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+/*Media query
+@media screen and (max-width 1050px){
+    .encabezado {
+        flex-direction: column;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .grid-container { 
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 25px auto 90px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }
+}
+
+@media screen and (max-width 580px){
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 250px auto 90px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+}
+*/

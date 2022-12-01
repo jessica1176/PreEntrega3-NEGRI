@@ -1,0 +1,21 @@
+.encabezado {
+    background-color: darkslategray;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        color: grey;
+        font-family: 'Saira', sans-serif;
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+    h2 {
+        color: white;
+        font-family: 'Saira', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
+}
